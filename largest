@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Input three integer numbers
+echo "enter first number:"
+read num1
+
+echo "enter second number:"
+read num2
+
+echo "enter third number:"
+read num3
+
+#compare the numbers to find the largest
+largest=$num1
+
+if [ $num2 -gt $largest ]; then 
+    largest=$num2
+fi
+
+if [ $num3 -gt $largest ]; then
+    largest=$num3
+fi
+
+#display the largest number
+echo "the largest number is: $largest"
+
